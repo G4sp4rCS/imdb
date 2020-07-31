@@ -1,0 +1,41 @@
+<style>
+  
+
+  footer {
+    position:relative;
+    margin-top:80px;
+  }
+</style>
+
+<div class="buttons container">
+
+  {{#unless sortByNameAsc}}
+    <a href="/movie-list/sort-by-name-asc">Ordenar por nombre (A - Z)</a> 
+  {{/unless}}
+
+  {{#unless sortByYearAsc}}
+    <a href="/movie-list/sort-by-year-asc">Ordenar por año (asc)</a>
+  {{/unless}}
+
+  {{#unless sortByNameDesc}}
+    <a href="/movie-list/sort-by-name-desc">Ordenar por nombre (Z - A)</a> 
+  {{/unless}}
+
+  {{#unless sortByYearDesc}}
+    <a href="/movie-list/sort-by-year-desc">Ordenar por año (desc)</a>
+  {{/unless}} 
+
+</div>
+<div class="list container"> 
+    {{#each movies}}
+      <div class="movie-list-container">
+          <img src="/img/{{this.cover}}">
+        <div class="movie-list-description">
+          <a href="/movie-detail/{{this.id}}">
+            <h3>{{this.title}}</h3>
+            <p>{{this.year}}</p>
+          </a>
+        </div>
+      </div>
+    {{/each}}
+</div>
