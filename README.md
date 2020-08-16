@@ -1,8 +1,11 @@
-## Mini imdb
+# Mini imdb
 
-i used NodeJS, Express, and Handlebars
+## this is a mini-imdb style webapp
 
-to initialize open a terminal in the repo folder
+
+## i used Javascript, HTML5, CSS3, NodeJS, Express, and Handlebars.
+
+*to initialize open a terminal in the repo folder*
 
 
 ``` npm install ```
